@@ -1,0 +1,14 @@
+<h1>Hello {{name}}</h1>
+<p>Email: {{email}}</p>
+<address>
+  {{address.street}}<br> {{address.zip}} {{address.city}}
+</address>
+
+<div *ngIf="showHobbies">
+  <h3>Hobbies</h3>
+  <ul>
+    <li *ngFor="let hobby of hobbies">
+      {{hobby}} <input type="button" value="x"  />
+    </li>
+  </ul>
+</div>
